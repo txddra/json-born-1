@@ -14,7 +14,20 @@ return students.students[index]
 }
 
 
+/* get Student By Name*/
 
+//given a name
+const getStudentByName = function(stuName){
+//loop through the student array
+for(const stu of students.students){
+//if the name matches the name passed in return it
+if(stu.name === stuName){
+return stu;
+}
+}//return '- 1' if student isn't found
+return -1 
+
+}
 
 
 
