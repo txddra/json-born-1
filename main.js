@@ -14,6 +14,10 @@ return students.students[index]
 }
 
 
+
+
+
+
 /* get Student By Name*/
 
 //given a name
@@ -30,7 +34,15 @@ return -1
 }
 
 
+/*graduate Student */
+//given a name
 
+const graduateStudent= function(stuName){
+
+//writes it back to the json file
+const toTheFile = JSON.stringify(students)
+fs.writeFileSync('../students.json', toTheFile)
+}
 
 if (typeof getStudentByIndex === 'undefined') {
   getStudentByIndex = undefined;
