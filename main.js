@@ -1,6 +1,10 @@
+// the file itself 
+const fs = require('fs')
+const file = fs.readFileSync('../students.json', 'utf 8')
 
-
-
+// const getStudentByIndex = function (index){
+// console.log(index)
+// }
 
 
 
