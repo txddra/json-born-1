@@ -1,10 +1,20 @@
-// the file itself 
+// import the students csv file
 const fs = require('fs')
-const file = fs.readFileSync('../students.json', 'utf 8')
+const file = fs.readFileSync('../students.json', 'utf8');
 
-// const getStudentByIndex = function (index){
-// console.log(index)
-// }
+//'`JSON.parse()` to change the JSON to an object'
+//**name the array 'students' or it won't work lol */
+const students = JSON.parse(file)
+
+
+/* get student by index*/
+const getStudentByIndex = function (index){
+
+return students.students[index]
+}
+
+
+
 
 
 
